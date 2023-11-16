@@ -131,7 +131,7 @@ CREATE TABLE `user_present_all_received_history` (
   `created_at` bigint NOT NULL,
   `updated_at`bigint NOT NULL,
   `deleted_at` bigint default NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
   INDEX userid_idx (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
